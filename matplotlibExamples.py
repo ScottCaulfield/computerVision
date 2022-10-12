@@ -2,7 +2,7 @@ from PIL import Image
 from pylab import *
 
 # Read image to array
-im = array(Image.open('Images/ClashOfCosmos.png').convert('L'))
+im = array(Image.open('Images/malachyBig.png').convert('L'))
 
 """ Plotting points """
 
@@ -39,13 +39,13 @@ im = array(Image.open('Images/ClashOfCosmos.png').convert('L'))
 # figure()
 
 # # hist() takes a 1D array as input, so flatten() converts any array to a 1D array with values taken row-wise
-hist(im.flatten(), 128)
+# hist(im.flatten(), 128)
 
 """ Interactive annotation """
 
-# imshow(im)
-# print("Click 3 points")
-# x = ginput(3)
-# print("You clicked", x)
+imshow(im)
+print("Click 3 points")
+x = ginput(3)
+print("You clicked", x)
 
 show()
